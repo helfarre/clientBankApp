@@ -8,8 +8,9 @@ import { Observable } from 'rxjs';
 })
 export class ApiServiceService {
 
-  public host:string="https://bank-app-api.herokuapp.com/transaction/";
-  
+  public host:string="http://localhost:8080/transaction/";
+  // public host:string="https://bank-app-api.herokuapp.com/transaction/";
+
   constructor(private httpClient:HttpClient) { }
 
   public  getAlltransactions(){
