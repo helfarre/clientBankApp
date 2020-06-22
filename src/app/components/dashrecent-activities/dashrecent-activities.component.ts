@@ -10,6 +10,8 @@ import { ApiServiceService } from 'src/app/services/api-service.service';
 })
 export class DashrecentActivitiesComponent implements OnInit {
   public selectedName:any;
+  page;
+  totalRecords;
   
   @Input() transaction : Array<Transaction>;
   constructor(){

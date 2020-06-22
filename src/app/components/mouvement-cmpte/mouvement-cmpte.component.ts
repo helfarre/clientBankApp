@@ -9,7 +9,8 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./mouvement-cmpte.component.css']
 })
 export class MouvementCmpteComponent implements OnInit {
-
+  page;
+  totalRecords;
   @Input() transaction : Array<Transaction>;
   constructor(private transService: ApiServiceService,private router:Router,private route:ActivatedRoute){
     this.transService=transService;

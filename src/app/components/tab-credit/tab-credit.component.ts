@@ -14,6 +14,7 @@ export class TabCreditComponent implements OnInit {
 
   totalRecords : string;
   page : number = 1;
+  selectedName;
   constructor() { }
 
   ngOnInit(): void {

@@ -25,7 +25,6 @@ import { RequestComponent } from './components/request/request.component';
 import { PassDataService } from './services/pass-data.service';
 import { AccountsTableComponent } from './components/accounts-table/accounts-table.component';
 import { NgxPaginationModule} from 'ngx-pagination';
-import { AccountDetailsComponent } from './components/account-details/account-details.component';
 import { AccountsComponent } from './components/accounts/accounts.component';
 import { AccountActivityChartComponent } from './components/account-activity-chart/account-activity-chart.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component'
@@ -65,7 +64,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     RequestComponent,
     CarteBComponent,
     AccountsTableComponent,
-    AccountDetailsComponent,
     AccountsComponent,
     AccountActivityChartComponent,
     DashboardComponent,
