@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Transaction } from '../Models/Transaction.Model';
 import { Observable } from 'rxjs';
-export const host:string="http://localhost:8080/";
+export const host:string="https://bank-app-api.herokuapp.com/";
 @Injectable({
   providedIn: 'root'
 })
