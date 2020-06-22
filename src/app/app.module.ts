@@ -23,7 +23,6 @@ import { ProfileComponent, DialogDataExampleDialog } from './components/profile/
 import { LogoutComponent } from './components/logout/logout.component';
 import { RequestComponent } from './components/request/request.component';
 import { PassDataService } from './services/pass-data.service';
-import { AccountsTableComponent } from './components/accounts-table/accounts-table.component';
 import { NgxPaginationModule} from 'ngx-pagination';
 import { AccountsComponent } from './components/accounts/accounts.component';
 import { AccountActivityChartComponent } from './components/account-activity-chart/account-activity-chart.component';
@@ -63,7 +62,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LogoutComponent,
     RequestComponent,
     CarteBComponent,
-    AccountsTableComponent,
     AccountsComponent,
     AccountActivityChartComponent,
     DashboardComponent,
