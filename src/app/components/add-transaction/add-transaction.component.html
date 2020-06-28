@@ -3,14 +3,14 @@
     
 
     <div  class="info">
-      <p *ngIf="selected" >Account number : {{currentAccount.numcompte}}</p>
+      <p *ngIf="selected" >Numéro de compte : {{currentAccount.numcompte}}</p>
       <p  *ngIf="selected"class="balance">${{currentAccount.balance}}</p>
       <p *ngIf="!selected">Veuillez selectionner un compte du tableau : </p>
     </div>
     
 
 
-    <a class="dropdown-item" *ngIf="Success">Transaction was done succesfuly 
+    <a class="dropdown-item" *ngIf="Success">Transaction efféctuée avec success 
     </a>
     <div class="container">
       <div class="row">
@@ -18,10 +18,10 @@
     
       <form [formGroup]="form" #f="ngForm"  >
         <div class="form-group">
-          <label for="exampleDropdownFormNum1">Numero international :<abbr style="color: red;" title="saisie le num du compte destinataire">*</abbr></label>
+          <label for="exampleDropdownFormNum1">Numéro international :<abbr style="color: red;" title="saisie le num du compte destinataire">*</abbr></label>
   
           <input (change)="Accountchange()" type="text" class="form-control mb-2" [class.is-invalid]="form.get('num').invalid"  formControlName="num" class="form-control" id="exampleDropdownFormNum1"  required>
-          <div style="color:red" *ngIf="accountnotfound">*account not found</div>
+          <div style="color:red" *ngIf="accountnotfound">*Compte untrouvable</div>
 
         </div>
         <div style="color:red" *ngIf="getnum.errors?.pattern">*un numero valide </div>

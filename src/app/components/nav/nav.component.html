@@ -5,10 +5,10 @@
       <span><mat-icon>group_work</mat-icon></span>
       <span id="title">Banque</span>
     </div>
-    <span *ngIf="isAuthenticated" id="small_title">ACCOUNTS</span>
+    <span *ngIf="isAuthenticated" id="small_title">COMPTES</span>
     <mat-nav-list *ngIf="isAuthenticated">
-        <a mat-list-item routerLink="dashboard" >Account Summary</a>
-        <a mat-list-item routerLink="accounts" >Accounts</a>
+        <a mat-list-item routerLink="dashboard" >Résumé des comptes</a>
+        <a mat-list-item routerLink="accounts" >COMPTES</a>
         <a mat-list-item routerLink="credits" >Mes Credits</a>
 
         <a mat-list-item routerLink="rib" >Demander attestation R.I.B</a>
@@ -21,7 +21,7 @@
          
       <span *ngIf="isAuthenticated" id="small_title">TRANSACTIONS</span>
     <mat-nav-list *ngIf="isAuthenticated">
-        <a mat-list-item routerLink="addtransaction" >Inquire Transactions</a>
+        <a mat-list-item routerLink="addtransaction" >Effectuer Transactions</a>
         <a mat-list-item routerLink="transactions" >Les transferts</a>
       </mat-nav-list>
 

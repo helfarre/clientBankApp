@@ -15,7 +15,7 @@
       </li>
 
       <li class="nav-item" *ngIf="isAuthenticated">
-        <a class="nav-link"  (click)="logout()">Logout</a>
+        <a class="nav-link"  (click)="logout()">Se déconnecter</a>
       </li>
 
       <li class="nav-item" *ngIf="isAuthenticated">
@@ -26,10 +26,10 @@
       
   
     <li class="nav-item showen" *ngIf="isAuthenticated">
-        <a class="nav-link" routerLink="dashboard" >Account Summary</a>
+        <a class="nav-link" routerLink="dashboard" >Résume des comptes</a>
         </li>
         <li class="nav-item showen" *ngIf="isAuthenticated">
-        <a class="nav-link" routerLink="accounts" >Accounts</a>
+        <a class="nav-link" routerLink="accounts" >Comptes</a>
         </li>
         <li class="nav-item showen" *ngIf="isAuthenticated">
         <a class="nav-link" routerLink="rib" >Demander attestation R.I.B</a>
